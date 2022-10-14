@@ -18,6 +18,9 @@ public class snakeAndLadder {
                 case 1:
                     position = diceNumber + position;
                     System.out.println("Ladder");
+                    if (position > 100) {
+                        position = 100;
+                    }
                     System.out.println("Position for the player after the ladder is : " + position);
                     break;
 
