@@ -4,7 +4,9 @@ public class snakeAndLadder {
     public static void main(String[] args) {
         System.out.println("----------------Welcome to Snake and Ladder Problem-----------------");
         int startPosition = 0, position = 0,WINNING_POSTION=100;
-        while (position <= WINNING_POSTION) {
+
+        while (position < WINNING_POSTION) {
+
             System.out.println("Start position is: " + startPosition);
             int diceNumber = (int) Math.floor(Math.random() * 10) % 6 + 1;
             System.out.println("Dice Number is : " + diceNumber);
